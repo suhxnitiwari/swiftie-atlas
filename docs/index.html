@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swiftie Atlas</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+  :root {
+    --bg: #fbf8f4; --fg: #1d1b20; --muted: #6b6470; --card: #ffffff; --line: #e6dfd6;
+    --ex: #d6336c; --partner: #e8590c; --friend: #2f9e44; --feud: #343a40; --reconciled: #7950f2;
+    --business: #1c7ed6; --family: #f59f00; --collab: #0ca678; --rumor: #adb5bd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16141a; --fg: #f1edf3; --muted: #a39ca8; --card: #211e26; --line: #35303c; --feud: #dee2e6; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, sans-serif; }
+  header { padding: 28px 16px 8px; max-width: 1100px; margin: 0 auto; }
+  h1 { margin: 0; font-family: Georgia, serif; font-size: 2rem; letter-spacing: -0.01em; }
+  header p { color: var(--muted); margin: 4px 0 0; }
+  nav { display: flex; gap: 6px; flex-wrap: wrap; max-width: 1100px; margin: 16px auto 0; padding: 0 16px; }
+  nav button { border: 1px solid var(--line); background: var(--card); color: var(--fg); padding: 6px 14px; border-radius: 999px; cursor: pointer; font: inherit; }
+  nav button.active { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+  main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+  section { display: none; } section.active { display: block; }
+  #graph { width: 100%; height: 640px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  #graph text { fill: var(--fg); font-size: 11px; pointer-events: none; }
+  .legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 10px 0; font-size: 13px; color: var(--muted); }
+  .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; background: var(--c); vertical-align: -1px; }
+  #tip { position: fixed; pointer-events: none; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; max-width: 280px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,.12); opacity: 0; transition: opacity .1s; }
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  select, input { font: inherit; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--card); color: var(--fg); }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+  .badge { font-size: 11px; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .confirmed { background: #d3f9d8; color: #2b8a3e; } .widely_reported { background: #fff3bf; color: #946800; } .fan_theory { background: #f1f3f5; color: #495057; }
+  .table-wrap { overflow-x: auto; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; border-top: 6px solid var(--era); }
+  .card h3 { margin: 0; font-family: Georgia, serif; } .card .yr { color: var(--muted); font-size: 13px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; } .chips span { font-size: 12px; background: var(--bg); border: 1px solid var(--line); padding: 1px 8px; border-radius: 999px; }
+  .card ul { padding-left: 18px; margin: 6px 0 0; font-size: 14px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; } @media (max-width: 700px) { .cols { grid-template-columns: 1fr; } #graph { height: 520px; } }
+  .note { color: var(--muted); font-size: 13px; margin-top: 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Swiftie Atlas ✦</h1>
+  <p>Exes, friends, feuds, easter eggs and symbols across every era. Song titles only, never lyrics. Each claim has a confidence label.</p>
+</header>
+<nav>
+  <button data-tab="map" class="active">Drama map</button>
+  <button data-tab="songs">Song → subject</button>
+  <button data-tab="eras">Eras & easter eggs</button>
+  <button data-tab="likes">Likes & dislikes</button>
+</nav>
+<main>
+  <section id="map" class="active">
+    <div class="legend" id="legend"></div>
+    <svg id="graph"></svg>
+    <p class="note">Drag nodes around. Hover for details. Lines show public events, not private facts.</p>
+  </section>
+  <section id="songs">
+    <div class="filters">
+      <select id="fAlbum"><option value="">All albums</option></select>
+      <select id="fConf"><option value="">Any confidence</option><option value="confirmed">Confirmed</option><option value="widely_reported">Widely reported</option><option value="fan_theory">Fan theory</option></select>
+      <input id="fText" placeholder="Search person or title…">
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>Song</th><th>Album</th><th>Subject</th><th>Confidence</th><th>Theme</th></tr></thead><tbody id="songRows"></tbody></table></div>
+  </section>
+  <section id="eras"><div class="grid" id="eraGrid"></div></section>
+  <section id="likes"><div class="cols"><div><h2>💛 Loves</h2><div id="likesList"></div></div><div><h2>🐍 Dislikes</h2><div id="dislikesList"></div></div></div></section>
+  <p class="note">Data lives in <code>docs/data/*.json</code>. Read the economy case study and symbolism analysis in <code>analysis/</code>. Fan project; not affiliated with Taylor Swift.</p>
+</main>
+<div id="tip"></div>
+<script>
+const COLORS = { center:"#c2255c", ex:"var(--ex)", partner:"var(--partner)", crush:"#f783ac", friend:"var(--friend)", ex_friend:"#8ce99a",
+  feud:"var(--feud)", reconciled:"var(--reconciled)", business_feud:"var(--business)", business:"#74c0fc", collaborator:"var(--collab)",
+  family:"var(--family)", rumored_feud:"var(--rumor)", related:"var(--line)" };
+const LABELS = { ex:"Ex", partner:"Partner", crush:"Crush", friend:"Friend", ex_friend:"Faded friendship", feud:"Feud", reconciled:"Feud → peace",
+  business_feud:"Business feud", collaborator:"Collaborator", family:"Family", rumored_feud:"Rumored (unconfirmed)" };
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button, section").forEach(x => x.classList.remove("active"));
+  b.classList.add("active"); document.getElementById(b.dataset.tab).classList.add("active");
+});
+const tip = document.getElementById("tip");
+const load = f => fetch("data/" + f).then(r => r.json());
+
+Promise.all([load("network.json"), load("songs.json"), load("eras.json"), load("likes.json")]).then(([net, songs, eras, likes]) => {
+  // songs per person, for tooltips
+  const byPerson = {};
+  songs.songs.forEach(s => (byPerson[s.subject] ??= []).push(s.title));
+
+  // legend
+  document.getElementById("legend").innerHTML = Object.entries(LABELS).map(([k,v]) => `<span style="--c:${COLORS[k]}">${v}</span>`).join("");
+
+  // force graph
+  const svg = d3.select("#graph"), el = svg.node();
+  const W = () => el.clientWidth, H = () => el.clientHeight;
+  const nodes = net.nodes.map(d => ({...d})), links = net.links.map(d => ({...d}));
+  const sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(d => d.type === "related" ? 70 : 230))
+    .force("charge", d3.forceManyBody().strength(-600))
+    .force("center", d3.forceCenter(W()/2, H()/2))
+    .force("collide", d3.forceCollide(40));
+  const link = svg.append("g").selectAll("line").data(links).join("line")
+    .attr("stroke", d => COLORS[d.type] || "#999").attr("stroke-opacity", .7)
+    .attr("stroke-width", d => d.type === "related" ? 1 : 2)
+    .attr("stroke-dasharray", d => d.type === "rumored_feud" || d.type === "ex_friend" ? "4 4" : null);
+  const node = svg.append("g").selectAll("g").data(nodes).join("g")
+    .call(d3.drag().on("start", (e,d) => { if (!e.active) sim.alphaTarget(.3).restart(); d.fx=d.x; d.fy=d.y; })
+                   .on("drag", (e,d) => { d.fx=e.x; d.fy=e.y; })
+                   .on("end", (e,d) => { if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+  node.append("circle").attr("r", d => d.group === "center" ? 22 : 9).attr("fill", d => COLORS[d.group] || "#999")
+    .attr("stroke", "var(--card)").attr("stroke-width", 2);
+  node.append("text").text(d => d.id).attr("x", d => d.group === "center" ? 26 : 12).attr("y", 4)
+    .style("font-weight", d => d.group === "center" ? 700 : 400);
+  node.on("mousemove", (e,d) => {
+    if (d.group === "center") return;
+    const songsFor = Object.entries(byPerson).filter(([k]) => k.includes(d.id.split(" ").pop())).flatMap(([,v]) => v);
+    tip.innerHTML = `<b>${esc(d.id)}</b> · ${esc(LABELS[d.group] || d.group)}${d.years ? " · " + esc(d.years) : ""}<br>${esc(d.note || "")}` +
+      (songsFor.length ? `<br><i>Songs linked: ${songsFor.map(esc).join(", ")}</i>` : "");
+    tip.style.opacity = 1; tip.style.left = Math.min(e.clientX + 14, innerWidth - 300) + "px"; tip.style.top = (e.clientY + 14) + "px";
+  }).on("mouseleave", () => tip.style.opacity = 0);
+  sim.on("tick", () => {
+    nodes.forEach(d => { d.x = Math.max(20, Math.min(W()-20, d.x)); d.y = Math.max(20, Math.min(H()-20, d.y)); });
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+
+  // songs table
+  const albums = [...new Set(songs.songs.map(s => s.album))];
+  document.getElementById("fAlbum").innerHTML += albums.map(a => `<option>${esc(a)}</option>`).join("");
+  const CONF = { confirmed:"Confirmed", widely_reported:"Widely reported", fan_theory:"Fan theory" };
+  const render = () => {
+    const a = fAlbum.value, c = fConf.value, t = fText.value.toLowerCase();
+    songRows.innerHTML = songs.songs.filter(s => (!a || s.album === a) && (!c || s.confidence === c) &&
+        (!t || (s.title + s.subject).toLowerCase().includes(t)))
+      .map(s => `<tr><td><b>${esc(s.title)}</b></td><td>${esc(s.album)} (${s.year})</td><td>${esc(s.subject)}</td>
+        <td><span class="badge ${s.confidence}">${CONF[s.confidence]}</span></td><td>${esc(s.theme)}</td></tr>`).join("");
+  };
+  [fAlbum, fConf, fText].forEach(x => x.oninput = render); render();
+
+  // eras
+  eraGrid.innerHTML = eras.eras.map(e => `<div class="card" style="--era:${e.color}"><h3>${esc(e.album)}</h3>
+    <div class="yr">${e.year} · ${esc(e.color_name)}</div>
+    <div class="chips">${e.symbols.map(s => `<span>${esc(s)}</span>`).join("")}</div>
+    <ul>${e.easter_eggs.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("");
+
+  // likes
+  const li = arr => arr.map(x => `<div class="card" style="--era:var(--line);margin-bottom:10px"><b>${esc(x.item)}</b><br><span style="color:var(--muted)">${esc(x.detail)}</span></div>`).join("");
+  likesList.innerHTML = li(likes.likes); dislikesList.innerHTML = li(likes.dislikes);
+});
+</script>
+</body>
+</html>

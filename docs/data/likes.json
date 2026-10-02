@@ -1,0 +1,27 @@
+{
+  "_meta": {"description": "Things Taylor Swift has publicly said or shown she loves / dislikes.", "as_of": "2025-10"},
+  "likes": [
+    {"item": "Cats", "detail": "Meredith Grey, Olivia Benson, and Benjamin Button. Benjamin was on her 2023 TIME Person of the Year cover"},
+    {"item": "The number 13", "detail": "Born Dec 13. She calls it her lucky number and wrote it on her hand on tour"},
+    {"item": "Christmas", "detail": "Grew up on a Christmas tree farm in Pennsylvania ('Christmas Tree Farm', 2019)"},
+    {"item": "Baking", "detail": "Her chai sugar cookies and homemade Pop-Tarts are well known among fans"},
+    {"item": "TV dramas", "detail": "Grey's Anatomy and Law & Order: SVU, which is where her cats' names come from"},
+    {"item": "Literature & poetry", "detail": "References to Dickinson, Rebecca, The Great Gatsby, and Peter Pan run throughout her catalog"},
+    {"item": "Cardigans & vintage style", "detail": "folklore merch made the cardigan iconic"},
+    {"item": "Rhode Island & beach houses", "detail": "Holiday House in Watch Hill, the setting of her July 4th parties"},
+    {"item": "Kansas City Chiefs", "detail": "A regular in the Arrowhead suite since September 2023"},
+    {"item": "Songwriting with pens", "detail": "At a 2022 songwriters' award speech she sorted her lyrics into 'quill', 'fountain pen', and 'glitter gel pen' songs"},
+    {"item": "Friendship bracelets", "detail": "A fan tradition from the Eras Tour, kicked off by a 'You're On Your Own, Kid' bridge reference"},
+    {"item": "Re-recording on her own terms", "detail": "Ownership of her work. She bought back her masters in 2025"}
+  ],
+  "dislikes": [
+    {"item": "Being told she doesn't write her own songs", "detail": "Called out Damon Albarn in 2022; wrote Speak Now solo as a statement"},
+    {"item": "Losing control of her masters", "detail": "The 2019 Big Machine sale led to six years of re-recording"},
+    {"item": "Media double standards", "detail": "'The Man', 'Blank Space', and her Miss Americana documentary all address this"},
+    {"item": "Tabloid relationship surveillance", "detail": "She described 'Lavender Haze' as pushing back on this"},
+    {"item": "Being misquoted or recorded without consent", "detail": "The 2016 phone-call fallout"},
+    {"item": "Ticket bots & resale chaos", "detail": "Called the 2022 Ticketmaster presale meltdown 'excruciating'"},
+    {"item": "AI deepfakes / misinformation", "detail": "Cited AI-generated fakes in her 2024 presidential endorsement post"},
+    {"item": "Jet trackers", "detail": "Her lawyers sent a cease-and-desist to a student tracking her jet (2024)"}
+  ]
+}

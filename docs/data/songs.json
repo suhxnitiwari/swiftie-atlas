@@ -1,0 +1,706 @@
+{
+ "_meta": {
+  "description": "Song -> widely discussed subject/inspiration. Song-level only; no lyrics are reproduced in this repo.",
+  "confidence_levels": {
+   "confirmed": "Taylor Swift or the subject has publicly said so",
+   "widely_reported": "Broadly reported by major outlets; not explicitly confirmed",
+   "fan_theory": "Popular fan interpretation; treat as speculation"
+  },
+  "as_of": "2025-10"
+ },
+ "songs": [
+  {
+   "album": "Taylor Swift",
+   "year": 2006,
+   "title": "Tim McGraw",
+   "subject": "Brandon Borello",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A summer romance remembered through a shared favorite song."
+  },
+  {
+   "album": "Taylor Swift",
+   "year": 2006,
+   "title": "Teardrops on My Guitar",
+   "subject": "Drew Hardwick",
+   "type": "crush",
+   "confidence": "confirmed",
+   "theme": "Unrequited crush on a friend who likes someone else. She has used his first name in the song and talked about him in interviews."
+  },
+  {
+   "album": "Taylor Swift",
+   "year": 2006,
+   "title": "Should've Said No",
+   "subject": "Sam Armstrong",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Confronting a boyfriend who cheated."
+  },
+  {
+   "album": "Taylor Swift",
+   "year": 2006,
+   "title": "Picture to Burn",
+   "subject": "Jordan Alford",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "A fiery, comedic breakup revenge fantasy."
+  },
+  {
+   "album": "Fearless",
+   "year": 2008,
+   "title": "Forever & Always",
+   "subject": "Joe Jonas",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A relationship ending abruptly; added late to the album. She publicly joked about a 27-second breakup call in 2008."
+  },
+  {
+   "album": "Fearless",
+   "year": 2008,
+   "title": "Hey Stephen",
+   "subject": "Stephen Barker Liles",
+   "type": "crush",
+   "confidence": "confirmed",
+   "theme": "A crush on a touring opener. The liner-note hidden message spelled out a clue; he later acknowledged it."
+  },
+  {
+   "album": "Fearless",
+   "year": 2008,
+   "title": "Fifteen",
+   "subject": "Abigail Anderson",
+   "type": "friend",
+   "confidence": "confirmed",
+   "theme": "High school lessons learned with her best friend, who is named in the song."
+  },
+  {
+   "album": "Fearless",
+   "year": 2008,
+   "title": "You Belong With Me",
+   "subject": "A friend's situation",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "Inspired by overhearing a friend on the phone with his girlfriend."
+  },
+  {
+   "album": "Fearless",
+   "year": 2008,
+   "title": "Breathe",
+   "subject": "A friendship ending",
+   "type": "friend",
+   "confidence": "confirmed",
+   "theme": "She has described it as about losing a friend, not a romance."
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "title": "Dear John",
+   "subject": "John Mayer",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "An older partner's manipulation. Mayer said in 2012 that the song humiliated him."
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "title": "Back to December",
+   "subject": "Taylor Lautner",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A rare apology song: she's the one who ended things and regrets it."
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "title": "Better Than Revenge",
+   "subject": "Camilla Belle",
+   "type": "feud",
+   "confidence": "widely_reported",
+   "theme": "Anger at a rival linked to the Joe Jonas split. One line was revised on the 2023 re-recording."
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "title": "Innocent",
+   "subject": "Kanye West",
+   "type": "feud",
+   "confidence": "widely_reported",
+   "theme": "A grace-note response to the 2009 VMAs interruption; she debuted it at the 2010 VMAs."
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "title": "Mean",
+   "subject": "A music critic",
+   "type": "feud",
+   "confidence": "confirmed",
+   "theme": "A response to a harsh critic after a rough 2010 Grammys performance."
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "title": "Enchanted",
+   "subject": "Adam Young (Owl City)",
+   "type": "crush",
+   "confidence": "confirmed",
+   "theme": "Hoping a first meeting means something. Young later posted a reply cover."
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "title": "Last Kiss",
+   "subject": "Joe Jonas",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "Grieving a relationship's final moments."
+  },
+  {
+   "album": "Red",
+   "year": 2012,
+   "title": "All Too Well",
+   "subject": "Jake Gyllenhaal",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "The scarf song. A 10-minute version plus a short film came out in 2021."
+  },
+  {
+   "album": "Red",
+   "year": 2012,
+   "title": "We Are Never Ever Getting Back Together",
+   "subject": "Jake Gyllenhaal",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Exasperated, final breakup anthem."
+  },
+  {
+   "album": "Red",
+   "year": 2012,
+   "title": "I Knew You Were Trouble",
+   "subject": "Harry Styles",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "Blaming herself for ignoring red flags."
+  },
+  {
+   "album": "Red",
+   "year": 2012,
+   "title": "Holy Ground",
+   "subject": "Joe Jonas",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "Fond nostalgia for a past relationship."
+  },
+  {
+   "album": "1989",
+   "year": 2014,
+   "title": "Style",
+   "subject": "Harry Styles",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A timeless, on-and-off pairing."
+  },
+  {
+   "album": "1989",
+   "year": 2014,
+   "title": "Out of the Woods",
+   "subject": "Harry Styles",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Anxiety in a fragile relationship; references a snowmobile accident she has described."
+  },
+  {
+   "album": "1989",
+   "year": 2014,
+   "title": "I Wish You Would",
+   "subject": "Harry Styles",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "Late-night longing after a breakup."
+  },
+  {
+   "album": "1989",
+   "year": 2014,
+   "title": "Is It Over Now? (From the Vault)",
+   "subject": "Harry Styles",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "Vault track; fans tie it to the same snowmobile story."
+  },
+  {
+   "album": "1989",
+   "year": 2014,
+   "title": "Bad Blood",
+   "subject": "Katy Perry",
+   "type": "feud",
+   "confidence": "widely_reported",
+   "theme": "Betrayal by a fellow artist over tour dancers. Neither named the other at first."
+  },
+  {
+   "album": "1989",
+   "year": 2014,
+   "title": "Blank Space",
+   "subject": "Her media image",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "Satire of the 'serial dater' persona the press built for her."
+  },
+  {
+   "album": "Single (as Nils Sjöberg)",
+   "year": 2016,
+   "title": "This Is What You Came For",
+   "subject": "Calvin Harris",
+   "type": "ex",
+   "confidence": "confirmed",
+   "theme": "She co-wrote Harris's hit under a pseudonym; revealed after the breakup and led to a public spat."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "Look What You Made Me Do",
+   "subject": "Kanye West / the 2016 feud",
+   "type": "feud",
+   "confidence": "widely_reported",
+   "theme": "Comeback single that reclaims the snake image."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "This Is Why We Can't Have Nice Things",
+   "subject": "Kanye West & Kim Kardashian",
+   "type": "feud",
+   "confidence": "widely_reported",
+   "theme": "A sarcastic look at a fake friendship that went bad."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "Getaway Car",
+   "subject": "Tom Hiddleston",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A relationship that began as an escape route and so was doomed."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "I Did Something Bad",
+   "subject": "Calvin Harris",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "Unapologetic, witch-trial imagery."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "Delicate",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Worrying a new love will be scared off by her reputation."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "Call It What You Want",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Finding peace in private love while her public life fell apart."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "Dress",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Intimacy and secrecy."
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "title": "King of My Heart",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Commitment; British imagery."
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "title": "Lover",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Settled, domestic love."
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "title": "London Boy",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A playful tour of London neighborhoods."
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "title": "Cornelia Street",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A real NYC street she rented a home on."
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "title": "Paper Rings",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Wanting the person more than the luxury."
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "title": "Soon You'll Get Better",
+   "subject": "Andrea Swift (mother)",
+   "type": "family",
+   "confidence": "confirmed",
+   "theme": "Her mother's cancer treatment."
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "title": "The Man",
+   "subject": "Gender double standards",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "How she'd be covered if she were a man."
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "title": "You Need to Calm Down",
+   "subject": "Online hate / LGBTQ+ advocacy",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "Mocks trolls and homophobic protesters."
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "title": "the last great american dynasty",
+   "subject": "Rebekah Harkness",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "Previous owner of her Rhode Island house."
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "title": "epiphany",
+   "subject": "Grandfather Dean Swift & healthcare workers",
+   "type": "family",
+   "confidence": "confirmed",
+   "theme": "WWII service and pandemic frontline workers."
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "title": "cardigan / august / betty",
+   "subject": "Fictional teenage love triangle",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "Betty, James, and Augustine. She confirmed the three songs connect."
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "title": "invisible string",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Fate linking two people long before they meet."
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "title": "my tears ricochet",
+   "subject": "Big Machine / masters dispute",
+   "type": "business_feud",
+   "confidence": "fan_theory",
+   "theme": "She said it was inspired by stories about divorce. Fans link it to the masters sale."
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "title": "mad woman",
+   "subject": "Scooter Braun / masters dispute",
+   "type": "business_feud",
+   "confidence": "fan_theory",
+   "theme": "Women being called crazy for reacting to mistreatment."
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "title": "peace",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Asking whether a partner can live with her chaotic fame."
+  },
+  {
+   "album": "evermore",
+   "year": 2020,
+   "title": "marjorie",
+   "subject": "Marjorie Finlay (grandmother)",
+   "type": "family",
+   "confidence": "confirmed",
+   "theme": "Her opera-singer grandmother; Marjorie's voice is in the track."
+  },
+  {
+   "album": "evermore",
+   "year": 2020,
+   "title": "tolerate it",
+   "subject": "Inspired by the novel Rebecca",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "A partner who no longer sees you."
+  },
+  {
+   "album": "evermore",
+   "year": 2020,
+   "title": "champagne problems",
+   "subject": "Fictional",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "A rejected proposal; co-written with Alwyn as 'William Bowery'."
+  },
+  {
+   "album": "evermore",
+   "year": 2020,
+   "title": "it's time to go",
+   "subject": "Big Machine / masters dispute",
+   "type": "business_feud",
+   "confidence": "fan_theory",
+   "theme": "Knowing when to walk away."
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "title": "Lavender Haze",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "confirmed",
+   "theme": "She said it was about protecting a relationship from tabloid noise."
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "title": "Anti-Hero",
+   "subject": "Herself",
+   "type": "inspiration",
+   "confidence": "confirmed",
+   "theme": "Self-loathing, anxiety, and her own worst habits."
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "title": "Sweet Nothing",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Gentle love; co-written as William Bowery."
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "title": "Question...?",
+   "subject": "Harry Styles",
+   "type": "ex",
+   "confidence": "fan_theory",
+   "theme": "Replaying an old, public romance."
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "title": "Would've, Could've, Should've",
+   "subject": "John Mayer",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Hindsight about an age-gap relationship when she was 19."
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "title": "Vigilante Shit",
+   "subject": "Scooter Braun / Kim Kardashian",
+   "type": "feud",
+   "confidence": "fan_theory",
+   "theme": "Revenge-noir. Fans link it to the divorce of a famous couple."
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "title": "Karma",
+   "subject": "Her detractors",
+   "type": "feud",
+   "confidence": "fan_theory",
+   "theme": "Karma as a reward for her and a punishment for her enemies."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "The Tortured Poets Department",
+   "subject": "Matty Healy",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "A chaotic artist romance; name-checks other poets and musicians."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "The Smallest Man Who Ever Lived",
+   "subject": "Matty Healy",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "Fury at being dropped without explanation."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "But Daddy I Love Him",
+   "subject": "Public reaction to the Healy romance",
+   "type": "feud",
+   "confidence": "widely_reported",
+   "theme": "Rejects judgment from fans and gossips."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "So Long, London",
+   "subject": "Joe Alwyn",
+   "type": "ex",
+   "confidence": "widely_reported",
+   "theme": "The slow end of a six-year relationship."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "thanK you aIMee",
+   "subject": "Kim Kardashian",
+   "type": "feud",
+   "confidence": "widely_reported",
+   "theme": "A childhood bully. The capital letters in the title spell KIM."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "Cassandra",
+   "subject": "The 2016 phone-call feud",
+   "type": "feud",
+   "confidence": "fan_theory",
+   "theme": "Being burned for telling the truth."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "The Alchemy",
+   "subject": "Travis Kelce",
+   "type": "partner",
+   "confidence": "widely_reported",
+   "theme": "New love told in football metaphors."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "So High School",
+   "subject": "Travis Kelce",
+   "type": "partner",
+   "confidence": "widely_reported",
+   "theme": "A giddy, teenage-feeling crush."
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "title": "I Can Do It With a Broken Heart",
+   "subject": "Performing the Eras Tour",
+   "type": "inspiration",
+   "confidence": "widely_reported",
+   "theme": "Smiling on stage while privately heartbroken."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "The Fate of Ophelia",
+   "subject": "Travis Kelce",
+   "type": "partner",
+   "confidence": "widely_reported",
+   "theme": "Being saved from a tragic, Shakespearean ending."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "Wi$h Li$t",
+   "subject": "Travis Kelce",
+   "type": "partner",
+   "confidence": "widely_reported",
+   "theme": "Trading glamour for a quiet future and family."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "Wood",
+   "subject": "Travis Kelce",
+   "type": "partner",
+   "confidence": "widely_reported",
+   "theme": "Cheeky innuendo."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "Father Figure",
+   "subject": "Scott Borchetta / Big Machine",
+   "type": "business_feud",
+   "confidence": "fan_theory",
+   "theme": "A mentor turned adversary; interpolates George Michael."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "Actually Romantic",
+   "subject": "Charli XCX",
+   "type": "feud",
+   "confidence": "fan_theory",
+   "theme": "Treating someone's obsession with her as flattering. Fans connect it to a 2024 Charli song."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "CANCELLED!",
+   "subject": "Friends who've been 'cancelled'",
+   "type": "friend",
+   "confidence": "fan_theory",
+   "theme": "Loyalty to friends during public scandal."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "Opalite",
+   "subject": "Travis Kelce",
+   "type": "partner",
+   "confidence": "fan_theory",
+   "theme": "Making your own luck after dark times."
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "title": "The Life of a Showgirl (feat. Sabrina Carpenter)",
+   "subject": "Showbusiness itself",
+   "type": "inspiration",
+   "confidence": "widely_reported",
+   "theme": "The glamour and costs of a life on stage."
+  }
+ ]
+}

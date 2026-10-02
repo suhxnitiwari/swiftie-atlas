@@ -1,0 +1,233 @@
+{
+ "_meta": {
+  "description": "Per-album palette, recurring symbols, and notable easter eggs. Paraphrased; no lyrics.",
+  "as_of": "2025-10"
+ },
+ "eras": [
+  {
+   "album": "Taylor Swift",
+   "year": 2006,
+   "color": "#2bb5a0",
+   "color_name": "teal / emerald",
+   "symbols": [
+    "guitars",
+    "pickup trucks",
+    "small-town Tennessee",
+    "high school hallways",
+    "burning photos"
+   ],
+   "easter_eggs": [
+    "Starts the habit of hidden messages: random capital letters in the CD lyric booklet spell out secret phrases",
+    "Names real boys' first names right in the songs ('Drew')",
+    "She wrote or co-wrote every song as a teenager"
+   ]
+  },
+  {
+   "album": "Fearless",
+   "year": 2008,
+   "color": "#d4af37",
+   "color_name": "gold",
+   "symbols": [
+    "fairy tales",
+    "princes & white horses",
+    "Romeo & Juliet",
+    "rain",
+    "being fifteen"
+   ],
+   "easter_eggs": [
+    "Liner-note hidden messages hint at each song's subject. 'Hey Stephen' revealed Stephen Liles",
+    "She drew '13' on her hand before every show",
+    "Fearless (Taylor's Version), April 2021, was the first re-recording"
+   ]
+  },
+  {
+   "album": "Speak Now",
+   "year": 2010,
+   "color": "#7b4fa0",
+   "color_name": "purple",
+   "symbols": [
+    "weddings & objections",
+    "castles",
+    "clocks",
+    "apologies",
+    "growing up"
+   ],
+   "easter_eggs": [
+    "She wrote every song entirely solo, a direct answer to critics who doubted her songwriting",
+    "'Innocent' debuted at the 2010 VMAs, a year after the Kanye interruption",
+    "Speak Now TV (2023) revised one line of 'Better Than Revenge'"
+   ]
+  },
+  {
+   "album": "Red",
+   "year": 2012,
+   "color": "#b3122e",
+   "color_name": "red / burgundy",
+   "symbols": [
+    "the scarf",
+    "autumn leaves",
+    "maple lattes",
+    "Polaroids",
+    "car crashes",
+    "red lipstick"
+   ],
+   "easter_eggs": [
+    "The scarf left at Jake Gyllenhaal's sister's house became fandom's holy relic",
+    "The '22' video shirt with a famously deadpan slogan was recreated on the Eras Tour",
+    "Red TV (2021) released the 10-minute 'All Too Well' and a short film starring Sadie Sink & Dylan O'Brien"
+   ]
+  },
+  {
+   "album": "1989",
+   "year": 2014,
+   "color": "#87ceeb",
+   "color_name": "sky blue",
+   "symbols": [
+    "seagulls",
+    "New York City",
+    "Polaroids",
+    "forests & woods",
+    "lipstick",
+    "cars at night"
+   ],
+   "easter_eggs": [
+    "Each CD came with a pack of Polaroids that each hide a lyric",
+    "The 'Blank Space' video satirized the man-eater persona the media had built for her",
+    "1989 TV vault titles were unlocked by fans solving 33 million Google puzzles in 2023"
+   ]
+  },
+  {
+   "album": "reputation",
+   "year": 2017,
+   "color": "#1a1a1a",
+   "color_name": "black / silver",
+   "symbols": [
+    "snakes",
+    "newspapers",
+    "gold & champagne",
+    "crimes & getaway cars",
+    "phone calls",
+    "dresses"
+   ],
+   "easter_eggs": [
+    "She wiped her Instagram in August 2017, then posted snake clips: a reclaiming of the 2016 'snake' insults",
+    "The 'Look What You Made Me Do' video lines up her past selves, roasting each other",
+    "The stage had giant inflatable cobras. Her ring has a snake wrapped around it"
+   ]
+  },
+  {
+   "album": "Lover",
+   "year": 2019,
+   "color": "#f7a8c8",
+   "color_name": "pastel pink & blue",
+   "symbols": [
+    "butterflies",
+    "hearts",
+    "rainbows",
+    "the Lover house",
+    "cats",
+    "July 4th"
+   ],
+   "easter_eggs": [
+    "In the 'ME!' video a snake explodes into butterflies: reputation literally becomes Lover",
+    "First album whose masters she owned from day one, after moving to Republic Records",
+    "'Cruel Summer' was never a single until it went viral during the Eras Tour, four years later"
+   ]
+  },
+  {
+   "album": "folklore",
+   "year": 2020,
+   "color": "#9a9a9a",
+   "color_name": "grey / black & white",
+   "symbols": [
+    "cardigans",
+    "forests",
+    "cabins",
+    "invisible string (gold thread)",
+    "teenage triangle",
+    "ghosts"
+   ],
+   "easter_eggs": [
+    "Surprise-dropped July 24, 2020 with only a day's notice",
+    "'William Bowery' turned out to be Joe Alwyn",
+    "The Betty/James/August triangle has fan-made 'canon' timelines"
+   ]
+  },
+  {
+   "album": "evermore",
+   "year": 2020,
+   "color": "#b5651d",
+   "color_name": "rust / orange plaid",
+   "symbols": [
+    "plaid & flannel",
+    "winter",
+    "small towns",
+    "gold rush",
+    "doors",
+    "rings"
+   ],
+   "easter_eggs": [
+    "A surprise 'sister album' in December 2020",
+    "The 'willow' video picks up exactly where the 'cardigan' video ended, tying the sister albums together",
+    "'marjorie' features archival vocals from her grandmother"
+   ]
+  },
+  {
+   "album": "Midnights",
+   "year": 2022,
+   "color": "#1d2b53",
+   "color_name": "midnight blue",
+   "symbols": [
+    "clocks",
+    "13 sleepless nights",
+    "lavender",
+    "karma",
+    "mastermind chessboard",
+    "snow"
+   ],
+   "easter_eggs": [
+    "Revealed track titles one at a time on TikTok in 'Midnights Mayhem With Me', spinning a bingo cage",
+    "The 3am Edition dropped 3 hours after the album at 3am ET",
+    "Each vinyl variant has a clock on the back; together they make a full clock face"
+   ]
+  },
+  {
+   "album": "The Tortured Poets Department",
+   "year": 2024,
+   "color": "#e8e4dc",
+   "color_name": "parchment / monochrome",
+   "symbols": [
+    "typewriters",
+    "poets & sanatoriums",
+    "religion & sin",
+    "mad hatters",
+    "chairman of the department",
+    "fortnights"
+   ],
+   "easter_eggs": [
+    "Announced while accepting a Grammy in February 2024",
+    "The Anthology edition (31 tracks) dropped 2 hours later at 2am, the 'double album' surprise",
+    "Hidden capital letters in 'thanK you aIMee' spell KIM"
+   ]
+  },
+  {
+   "album": "The Life of a Showgirl",
+   "year": 2025,
+   "color": "#f28c28",
+   "color_name": "orange & mint green",
+   "symbols": [
+    "sparkles & rhinestones",
+    "Ophelia",
+    "Old Hollywood (Elizabeth Taylor)",
+    "Vegas showgirls",
+    "opalite",
+    "wedding wishes"
+   ],
+   "easter_eggs": [
+    "Announced on Travis & Jason Kelce's 'New Heights' podcast in August 2025, after an orange-themed countdown",
+    "The engagement announcement on Aug 26, 2025 drew instant comparisons to Showgirl imagery",
+    "A theatrical 'Release Party of a Showgirl' event topped the US box office on release weekend"
+   ]
+  }
+ ]
+}

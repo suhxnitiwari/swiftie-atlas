@@ -1,0 +1,519 @@
+{
+ "_meta": {
+  "description": "Taylor Swift's publicly reported relationships, friendships, feuds and reconciliations. Every edge is about public events only.",
+  "edge_types": [
+   "ex",
+   "partner",
+   "crush",
+   "friend",
+   "ex_friend",
+   "feud",
+   "reconciled",
+   "business_feud",
+   "collaborator",
+   "family"
+  ],
+  "as_of": "2025-10"
+ },
+ "nodes": [
+  {
+   "id": "Taylor Swift",
+   "group": "center"
+  },
+  {
+   "id": "Joe Jonas",
+   "group": "ex",
+   "years": "2008",
+   "note": "Short relationship. She talked about the 27-second breakup call on TV, and they're friendly today."
+  },
+  {
+   "id": "Taylor Lautner",
+   "group": "ex",
+   "years": "2009",
+   "note": "Met filming Valentine's Day. Amicable; he appeared in the 'I Can See You' video (2023)."
+  },
+  {
+   "id": "John Mayer",
+   "group": "ex",
+   "years": "2009–2010",
+   "note": "Dear John. Mayer said in 2012 that he felt humiliated by the song."
+  },
+  {
+   "id": "Jake Gyllenhaal",
+   "group": "ex",
+   "years": "2010",
+   "note": "The 'All Too Well' scarf saga. The 2021 short film revived the discourse."
+  },
+  {
+   "id": "Conor Kennedy",
+   "group": "ex",
+   "years": "2012",
+   "note": "Brief summer romance in Hyannis Port."
+  },
+  {
+   "id": "Harry Styles",
+   "group": "ex",
+   "years": "2012–2013",
+   "note": "Widely tied to many 1989 songs. Cordial at the 2023 Grammys."
+  },
+  {
+   "id": "Calvin Harris",
+   "group": "ex",
+   "years": "2015–2016",
+   "note": "After they split, Harris publicly criticized the pseudonymous co-write reveal."
+  },
+  {
+   "id": "Tom Hiddleston",
+   "group": "ex",
+   "years": "2016",
+   "note": "'Hiddleswift' summer: the 'I ♥ T.S.' tank top."
+  },
+  {
+   "id": "Joe Alwyn",
+   "group": "ex",
+   "years": "2016–2023",
+   "note": "Six-year private relationship. Co-wrote as 'William Bowery'."
+  },
+  {
+   "id": "Matty Healy",
+   "group": "ex",
+   "years": "2023",
+   "note": "Brief, controversial romance widely tied to TTPD."
+  },
+  {
+   "id": "Travis Kelce",
+   "group": "partner",
+   "years": "2023–",
+   "note": "Chiefs tight end. They announced their engagement in August 2025."
+  },
+  {
+   "id": "Drew Hardwick",
+   "group": "crush",
+   "years": "~2004",
+   "note": "Inspired 'Teardrops on My Guitar'."
+  },
+  {
+   "id": "Kanye West",
+   "group": "feud",
+   "years": "2009, 2016",
+   "note": "VMAs interruption in 2009, a brief thaw in 2015, then the 'Famous' lyric and phone-call fight in 2016."
+  },
+  {
+   "id": "Kim Kardashian",
+   "group": "feud",
+   "years": "2016–",
+   "note": "Posted an edited call clip in 2016 with snake emojis. The full call leaked in 2020. Fans link her to 'thanK you aIMee'."
+  },
+  {
+   "id": "Katy Perry",
+   "group": "reconciled",
+   "years": "2014–2019",
+   "note": "The tour-dancers dispute led to 'Bad Blood'. They made peace with an olive branch and cookies, and Perry appeared in 'YNTCD' (2019)."
+  },
+  {
+   "id": "Nicki Minaj",
+   "group": "reconciled",
+   "years": "2015",
+   "note": "A Twitter misunderstanding over VMA nominations, resolved quickly; they performed together at the VMAs."
+  },
+  {
+   "id": "Camilla Belle",
+   "group": "feud",
+   "years": "2008–2010",
+   "note": "Widely linked to 'Better Than Revenge'."
+  },
+  {
+   "id": "Scooter Braun",
+   "group": "business_feud",
+   "years": "2019–",
+   "note": "Bought Big Machine and her masters in 2019, which prompted the Taylor's Version re-records. He also managed Kanye West at the time of the 2016 feud."
+  },
+  {
+   "id": "Scott Borchetta",
+   "group": "business_feud",
+   "years": "2019–",
+   "note": "Her first label head. Their mentor relationship soured over the masters sale."
+  },
+  {
+   "id": "Shamrock Capital",
+   "group": "business",
+   "years": "2020–2025",
+   "note": "Bought her masters from Braun in 2020. Swift bought them back in May 2025."
+  },
+  {
+   "id": "Damon Albarn",
+   "group": "reconciled",
+   "years": "2022",
+   "note": "Claimed she didn't write her own songs. She called it out and he apologized."
+  },
+  {
+   "id": "Charli XCX",
+   "group": "rumored_feud",
+   "years": "2024–2025",
+   "note": "Fan theory only, about 'Sympathy is a knife' and 'Actually Romantic'. Neither has confirmed it."
+  },
+  {
+   "id": "Karlie Kloss",
+   "group": "ex_friend",
+   "years": "2013–~2018",
+   "note": "Part of the 1989 'squad'. They were seen together less after 2018; the drift is speculation only."
+  },
+  {
+   "id": "Selena Gomez",
+   "group": "friend",
+   "years": "2008–",
+   "note": "One of her longest celebrity friendships."
+  },
+  {
+   "id": "Abigail Anderson",
+   "group": "friend",
+   "years": "high school–",
+   "note": "Childhood best friend, named in 'Fifteen'."
+  },
+  {
+   "id": "Ed Sheeran",
+   "group": "friend",
+   "years": "2012–",
+   "note": "Friend and duet partner ('Everything Has Changed', 'End Game', 'Run')."
+  },
+  {
+   "id": "Jack Antonoff",
+   "group": "collaborator",
+   "years": "2013–",
+   "note": "Longtime producer from 1989 through TTPD."
+  },
+  {
+   "id": "Aaron Dessner",
+   "group": "collaborator",
+   "years": "2020–",
+   "note": "The National. Co-architect of folklore and evermore."
+  },
+  {
+   "id": "Max Martin & Shellback",
+   "group": "collaborator",
+   "years": "2012–",
+   "note": "Pop machinery from Red, 1989, reputation, and Showgirl."
+  },
+  {
+   "id": "Gigi Hadid",
+   "group": "friend",
+   "years": "2015–",
+   "note": "Close friend and 'squad' member."
+  },
+  {
+   "id": "Blake Lively",
+   "group": "friend",
+   "years": "2015–",
+   "note": "Close friend. Media reported strain in 2025 after Swift's name came up in Lively's legal dispute with Justin Baldoni; neither has publicly commented."
+  },
+  {
+   "id": "HAIM",
+   "group": "friend",
+   "years": "2014–",
+   "note": "Eras Tour openers; 'no body, no crime'."
+  },
+  {
+   "id": "Sabrina Carpenter",
+   "group": "friend",
+   "years": "2023–",
+   "note": "Eras opener; featured on the 'Life of a Showgirl' title track."
+  },
+  {
+   "id": "Phoebe Bridgers",
+   "group": "friend",
+   "years": "2020–",
+   "note": "'Nothing New' (Vault)."
+  },
+  {
+   "id": "Lana Del Rey",
+   "group": "collaborator",
+   "years": "2022–",
+   "note": "'Snow on the Beach'."
+  },
+  {
+   "id": "Brittany Mahomes",
+   "group": "friend",
+   "years": "2023–",
+   "note": "Chiefs-suite friend. 2024 political speculation stayed speculation."
+  },
+  {
+   "id": "Gracie Abrams",
+   "group": "friend",
+   "years": "2023–",
+   "note": "Eras opener; collab 'us.'."
+  },
+  {
+   "id": "Zoë Kravitz",
+   "group": "friend",
+   "years": "2020–",
+   "note": "Friend; co-writing credit on 'Lavender Haze'."
+  },
+  {
+   "id": "Andrea Swift",
+   "group": "family",
+   "note": "Mother. Inspired 'The Best Day' and 'Soon You'll Get Better'."
+  },
+  {
+   "id": "Scott Swift",
+   "group": "family",
+   "note": "Father."
+  },
+  {
+   "id": "Austin Swift",
+   "group": "family",
+   "note": "Brother."
+  },
+  {
+   "id": "Marjorie Finlay",
+   "group": "family",
+   "note": "Grandmother; 'marjorie'."
+  }
+ ],
+ "links": [
+  {
+   "source": "Taylor Swift",
+   "target": "Joe Jonas",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Taylor Lautner",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "John Mayer",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Jake Gyllenhaal",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Conor Kennedy",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Harry Styles",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Calvin Harris",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Tom Hiddleston",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Joe Alwyn",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Matty Healy",
+   "type": "ex"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Travis Kelce",
+   "type": "partner"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Drew Hardwick",
+   "type": "crush"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Kanye West",
+   "type": "feud"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Kim Kardashian",
+   "type": "feud"
+  },
+  {
+   "source": "Kanye West",
+   "target": "Kim Kardashian",
+   "type": "related"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Katy Perry",
+   "type": "reconciled"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Nicki Minaj",
+   "type": "reconciled"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Camilla Belle",
+   "type": "feud"
+  },
+  {
+   "source": "Camilla Belle",
+   "target": "Joe Jonas",
+   "type": "related"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Scooter Braun",
+   "type": "business_feud"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Scott Borchetta",
+   "type": "business_feud"
+  },
+  {
+   "source": "Scooter Braun",
+   "target": "Scott Borchetta",
+   "type": "related"
+  },
+  {
+   "source": "Scooter Braun",
+   "target": "Shamrock Capital",
+   "type": "related"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Shamrock Capital",
+   "type": "business"
+  },
+  {
+   "source": "Scooter Braun",
+   "target": "Kanye West",
+   "type": "related"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Damon Albarn",
+   "type": "reconciled"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Charli XCX",
+   "type": "rumored_feud"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Karlie Kloss",
+   "type": "ex_friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Selena Gomez",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Abigail Anderson",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Ed Sheeran",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Jack Antonoff",
+   "type": "collaborator"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Aaron Dessner",
+   "type": "collaborator"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Max Martin & Shellback",
+   "type": "collaborator"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Gigi Hadid",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Blake Lively",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "HAIM",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Sabrina Carpenter",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Phoebe Bridgers",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Lana Del Rey",
+   "type": "collaborator"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Brittany Mahomes",
+   "type": "friend"
+  },
+  {
+   "source": "Brittany Mahomes",
+   "target": "Travis Kelce",
+   "type": "related"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Gracie Abrams",
+   "type": "friend"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Zoë Kravitz",
+   "type": "friend"
+  },
+  {
+   "source": "Matty Healy",
+   "target": "Phoebe Bridgers",
+   "type": "related"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Andrea Swift",
+   "type": "family"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Scott Swift",
+   "type": "family"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Austin Swift",
+   "type": "family"
+  },
+  {
+   "source": "Taylor Swift",
+   "target": "Marjorie Finlay",
+   "type": "family"
+  }
+ ]
+}
