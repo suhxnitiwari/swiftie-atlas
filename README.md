@@ -2,7 +2,7 @@
 
 *An open, sourced, fan-made atlas of the Taylor Swift universe: who each song is about, who's feuding with whom, and what it all does to the economy.*
 
-**Live:** not deployed yet. Run it locally (below), or enable GitHub Pages from the `/docs` folder on `main`.
+**Live:** https://suhxnitiwari.github.io/swiftie-atlas/
 
 ## What it is
 
